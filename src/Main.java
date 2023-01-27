@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import  static no1.no1.getNo1;
 import  static no2.no2.getNo2;
+import static no3.no3.getNo3;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -31,6 +32,11 @@ public class Main {
                 rerunSoal(nomorSoal);
                 main(args);
                 break;
+            case 3:
+                getNo3();
+                rerunSoal(nomorSoal);
+                main(args);
+                break;
             default:
                 System.out.println("Nomor Soal yang anda masukkan tidak ada");
         }
@@ -49,6 +55,10 @@ public class Main {
                     break;
                 case 2:
                     getNo2();
+                    rerunSoal(noSoal);
+                    break;
+                case 3:
+                    getNo3();
                     rerunSoal(noSoal);
                     break;
                 default:
